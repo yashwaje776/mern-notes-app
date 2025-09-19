@@ -30,6 +30,13 @@ A modern **Notes Application** built with the **MERN stack** (MongoDB, Express, 
 
 ---
 
+## Live Demo
+
+- **Frontend:** [https://mern-notes-app-frontend-j6xi.onrender.com/](https://mern-notes-app-frontend-j6xi.onrender.com/)  
+- **Backend API:** [https://mern-notes-app-backend1.onrender.com](https://mern-notes-app-backend1.onrender.com)  
+
+---
+
 ## Installation
 
 1. **Clone the repository**
@@ -37,3 +44,33 @@ A modern **Notes Application** built with the **MERN stack** (MongoDB, Express, 
 ```bash
 git clone https://github.com/yashwaje776/mern-notes-app.git
 cd mern-notes-app
+
+Backend Setup
+
+cd backend
+npm install
+Create a .env file with the following variables:
+
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+PORT=5000
+
+Start the backend server:
+
+npm start
+
+
+Frontend Setup
+
+cd ../frontend
+npm install
+
+
+Create a .env file with the following variable:
+
+VITE_API_URL=http://localhost:5000
+
+
+Start the frontend development server:
+
+npm run dev
